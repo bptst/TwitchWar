@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sprite animation</title>
+</head>
+<body>
+  <div class='bg_vert'></div>
+  <img id='img_sprite_attack_barbarian_0' class='img' src='assets/barbarian/Run+Attack.png'></img>
+  <img id='img_sprite_attack_soldier_0' class='img' src='assets/soldier/Run+Attack.png'></img>
+  <img id='img_sprite_attack_orc_0' class='img' src='assets/orc/Run+Attack.png'></img>
+  <img id='img_sprite_attack_mage_0' class='img' src='assets/mage/Run+Attack.png'></img>
+  <img id='img_sprite_attack_spike_0' class='img' src='assets/spike/Run+Attack.png'></img>
+  <img id='img_sprite_attack_shaman_0' class='img' src='assets/shaman/Run+Attack.png'></img>
+  <img id='img_sprite_attack_gobelin_0' class='img' src='assets/gobelin/Run+Attack.png'></img>
+
+
+  <img id='img_sprite_attack_shaman_1' class='img' src='assets/shaman/attack_1.png'></img>
+
+  <img id='img_sprite_attack_soldier_1' class='img' src='assets/soldier/attack_1.png'></img>
+
+  <img id='img_sprite_death_soldier' class='img' src='assets/soldier/Dead.png'></img>
+  <img id='img_sprite_death_barbarian' class='img' src='assets/barbarian/Dead.png'></img>
+  <img id='img_sprite_death_orc' class='img' src='assets/orc/Dead.png'></img>
+  <img id='img_sprite_death_mage' class='img' src='assets/mage/Dead.png'></img>
+  <img id='img_sprite_death_spike' class='img' src='assets/spike/Dead.png'></img>
+  <img id='img_sprite_death_shaman' class='img' src='assets/shaman/Dead.png'></img>
+  <img id='img_sprite_death_gobelin' class='img' src='assets/gobelin/Dead.png'></img>
+
+
+  <img id='img_sprite_run_barbarian' class='img' src='assets/barbarian/Run.png'></img>
+  <img id='img_sprite_run_soldier' class='img' src='assets/soldier/Run.png'></img>
+  <img id='img_sprite_run_orc' class='img' src='assets/orc/Run.png'></img>
+  <img id='img_sprite_run_mage' class='img' src='assets/mage/Run.png'></img>
+  <img id='img_sprite_run_spike' class='img' src='assets/spike/Run.png'></img>
+  <img id='img_sprite_run_shaman' class='img' src='assets/shaman/Run.png'></img>
+  <img id='img_sprite_run_gobelin' class='img' src='assets/gobelin/Run.png'></img>
+
+
+  <img id='blood_effect' class='img' src='assets/blood_effect.png'></img>
+
+
+  <img id='hp_bar' class='img' src='hp_bar.png'></img>
+  <img id='hp_bar_red' class='img' src='hp_bar_red.png'></img>
+  <p class='text score_left'>0</p>
+  <p class='text score_right'>0</p>
+
+
+
+
+
+    <canvas id='canvas'></canvas>
+    <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+    <script src="tmi.min.js"></script>
+    <script src="warrior.js"></script>
+
+    <script src="main.js"></script>
+
+</body>
+
+<style>
+
+.img{
+  display: none;
+}
+#canvas{
+  background: url('background.png');
+}
+.bg_vert{
+width: 1920px;
+height: 1080px;
+position: absolute;
+z-index: -1;
+}
+.score_left{
+  z-index: 999999;
+position: absolute;
+top: 100px;
+margin-right: 1000px;
+color: white;
+font-size: 200px;
+}
+.score_right{
+  z-index: 999999;
+position: absolute;
+top: 100px;
+margin-left: 1000px;
+color: white;
+font-size: 200px;
+}
+
+.vsc-initialized{
+  background-color: wheat;
+  margin: 0;
+padding: 0;
+}
+</style>
+</html>
